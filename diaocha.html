@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>readme调查问卷</title>
+    <script type="text/javascript" src="js/Readme.js"></script>
+    <link rel="stylesheet" type="text/css" href="mystyle.css">
+    <script type="text/javascript">
+    </script>
+</head>
+
+<body onload="checkCookie()">
+    <div class="top">
+        <div class="logo"> <a href="Read_Me.html">Read Me</a> </div>
+        <div class="wel">阅读我，给你畅游书海的乐趣！<br> 等待你的到来！
+        </div>
+        <div id="time">
+
+        </div>
+        <div class="detail">
+            <ul>
+                <li><a href="#">语言<span class="icon"></span></a>
+                    <ul>
+                        <li><a href="#">中国站：简体中文</a></li>
+                        <li><a href="#">国际站：English</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">我的<span class="icon"></span></a>
+                    <ul class="list2">
+                        <li><a href="#">账户信息</a></li>
+                        <li><a href="#">设置</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">我的云书房</a></li>
+                <li><a href="#">我的购物车</a></li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <!--top-->
+    <div id="jianbian">
+        <div id="nav">
+            <div id="mulu">
+                <ul>
+                    <li><a href="./Read_Me.html">首页</a></li>
+                    <li><a href="#">Read Me动态</a></li>
+                    <li><a href="#" onClick="f1()">藏书阁</a></li>
+                    <li><a href="#">网站导航<span class="icon"></span></a>
+                        <ul class="list1">
+                            <li><a href="#">资源中心</a></li>
+                            <li><a href="#">帮助</a></li>
+                            <li><a href="#">关于我们</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./diaocha.html">问卷调查</a></li>
+                    <li id="dl"><a onclick="checkCookie()">登录</a></li>
+                </ul>
+            </div>
+            <!--mulu-->
+
+        </div>
+
+        <div id="biaoge">
+            <table align="center" width="100%" border="6" id="ttttt">
+                <tr>
+                    <td align="center">
+                        <h1 style="color: #f7892f;">readme调查问卷</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;&nbsp;&nbsp;&nbsp;为了能够及时了解您对本网站的需求，提升readme文献资源建设的质量和水平， 更好的为您服务，readme特设计了问卷调查题目如下， 请协助填写，谢谢您的合作！
+                    </td>
+                </tr>
+                <form name="form1" action="f1" onsubmit="return printing();">
+                    <tr>
+                        <td align="left">
+                            1.您的年级<br /> 请您选择：
+                            <select name="grade" style="width: 80px;" id="gra">
+                    	<option value="大一" selected>大一</option>
+                    	<option value="大二">大二</option>
+                    	<option value="大三">大三</option>
+                    	<option value="大四">大四</option>
+                    	<option value="研究生">研究生</option>
+                    </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            2.您的专业<br />
+                            <input name="major" type="text" style="width: 200px;" id="maj" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            3.您浏览readme的频率<br />
+                            <input name="frequency" type="radio" value="几乎每天" id="fre" />几乎每天<br />
+                            <input name="frequency" type="radio" value="每周1-2次" id="fre" />每周1-2次<br />
+                            <input name="frequency" type="radio" value="每月1-2次" id="fre" />每月1-2次<br />
+                            <input name="frequency" type="radio" value="几乎不" id="fre" />几乎不
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            4.您浏览readme的原因是（可多选）<br />
+                            <input name="why" type="checkbox" value="借阅专业图书" id="why1" />借阅专业图书<br />
+                            <input name="why" type="checkbox" value="随便翻翻书刊" id="why1" />随便翻翻书刊<br />
+                            <input name="why" type="checkbox" value="借阅光盘" id="why1" />借阅光盘<br />
+                            <input name="why" type="checkbox" value="参加组织的活动" id="why1" />参加组织的活动<br />
+                            <input name="why" type="checkbox" value="自习，复习功课" id="why1" />自习，复习功课<br />
+                            <input name="why" type="checkbox" value="上网" id="why1" />上网<br />
+                            <input name="why" type="checkbox" value="检索电子文献" id="why1" />检索电子文献
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            5.对于本网页的阅览环境<br />
+                            <input name="surr" type="radio" value="满意" id="sur" />满意<br />
+                            <input name="surr" type="radio" value="基本满意" id="sur" />基本满意<br />
+                            <input name="surr" type="radio" value="不满意" id="sur" />不满意 &nbsp;&nbsp;&nbsp;&nbsp;您的建议：
+                            <input name="surr" type="text" style="width: 200px;" id="sur1" />
+                        </td>
+
+                    </tr>
+                    <tr>
+                        <td>
+                            6.您对readme的建议<br />
+                            <textarea name="idea" rows="5" cols="90%" wrap="virtual" id="ide"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td align="center">
+                            <input name="sub" type="submit" style="background-color:coral;" value="提交答卷" /> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input name="res" type="reset" style="background-color:coral;" value="清空" />
+                        </td>
+                    </tr>
+                </form>
+            </table>
+        </div>
+    </div>
+</body>
+
+</html>
